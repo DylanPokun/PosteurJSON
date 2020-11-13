@@ -1,0 +1,12 @@
+[{
+        "URL": "<URL>",
+        "Headers": {
+                "Accept": "application/json",
+                "Content-Type": "application/json",
+                "Authorization" : "Basic *** or Bearer ***"
+        },
+        "Method": "GET",
+        "Body": {
+                "any-content": "any-content"
+        }
+}]
