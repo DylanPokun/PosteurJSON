@@ -67,7 +67,7 @@ public class App {
 						post.setHeader("Authorization", authorization);
 
 						// Body
-						String jsonRequestBody = bodyJson.toJSONString();
+						String jsonRequestBody = bodyJson.toString();
 						HttpEntity entity = new ByteArrayEntity(jsonRequestBody.getBytes("UTF-8"));
 						post.setEntity(entity);
 

@@ -1,0 +1,40 @@
+[
+	{
+		"URL": "https://api.atlassian.com/scim/directory/<your-directory>/Users",
+		"Headers": {
+			"Accept": "application/json",
+			"Content-Type": "application/json",
+			"Authorization": "Bearer <your-Bearer-token>"
+		},
+		"Method": "GET"
+	},
+	{
+		"URL": "https://<your-site>.atlassian.net/rest/api/3/users/search",
+		"Headers": {
+			"Accept": "application/json",
+			"Content-Type": "application/json",
+			"Authorization": "Basic <your-mail:apikey-encodedBase64>"
+		},
+		"Method": "GET"
+	},
+	{
+		"URL": "https://api.atlassian.com/scim/directory/<your-directory>/Users",
+		"Headers": {
+			"Accept": "application/json",
+			"Content-Type": "application/json",
+			"Authorization": "Bearer <your-Bearer-token>"
+		},
+		"Body": {
+			"emails": [
+				{
+					"value": "javauser.apiadded@<your-domain>",
+					"primary": true
+				}
+			],
+			"displayName": "ApiAdded JavaUser",
+			"username": "javauser.apiadded",
+			"active": true
+		},
+		"Method": "POST"
+	}
+]
